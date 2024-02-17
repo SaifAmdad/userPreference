@@ -40,4 +40,5 @@ bgColor.addEventListener("change", (event) => {
 resetbtn.addEventListener("click", () => {
   localStorage.removeItem("fontSize");
   localStorage.removeItem("bgColor");
+  onloeadStyle("16px", "");
 });
