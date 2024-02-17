@@ -22,9 +22,9 @@ const onloeadStyle = (fontSizeLS, bgColorLS) => {
   } else if (!fontSizeLS && bgColorLS) {
     onloeadStyle("16px", bgColorLS);
   } else if (fontSizeLS && !bgColorLS) {
-    onloeadStyle(fontSizeLS, "");
+    onloeadStyle(fontSizeLS, "selectColor");
   } else if (!fontSizeLS && !bgColorLS) {
-    onloeadStyle("16px", "");
+    onloeadStyle("16px", "selectColor");
   }
 })();
 
@@ -40,5 +40,5 @@ bgColor.addEventListener("change", (event) => {
 resetbtn.addEventListener("click", () => {
   localStorage.removeItem("fontSize");
   localStorage.removeItem("bgColor");
-  onloeadStyle("16px", "");
+  onloeadStyle("16px", "selectColor");
 });
